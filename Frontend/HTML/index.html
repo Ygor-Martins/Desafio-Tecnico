@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        /* Estilização básica da página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilização do contêiner do formulário */
+        .cadastro-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .cadastro-container h2 {
+            margin-bottom: 20px;
+            color: #2b2a2a;
+            text-align: center;
+        }
+
+        /* Estilização dos grupos de campos */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Destaque visual quando o usuário clica no campo */
+        .form-group input:focus {
+            outline: none;
+            border-color: #00a2ff;
+        }
+
+        /* Botão de enviar estilizado */
+        .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+.btn-enviar {
+    background-color: #116ce2; 
+    color: #ffffff;
+    border: none;
+    padding: 0 24px;
+    height: 40px;
+    border-radius: 20px; 
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito de passar o mouse (Hover) */
+.btn-enviar:hover {
+    background-color: #1157b3;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+/* Efeito de clique (Active) */
+.btn-enviar:active {
+    background-color: #152f8b;
+    box-shadow: 0 1px 2px 0 rgba(45, 48, 51, 0.3);
+}
+    </style>
+</head>
+<body>
+
+    <div class="cadastro-container">
+        <h2>Criar Conta</h2>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required minlength="6" placeholder="Mínimo 6 caracteres">
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="btn-enviar">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
