@@ -1,0 +1,16 @@
+# Dependências e build
+node_modules/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Arquivos locais / de sistema
+*.local
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json

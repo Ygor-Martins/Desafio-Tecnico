@@ -3,3 +3,7 @@ Progresso 1 HTML + CSS
 - criado o botão de enviar
 - feito a estilização dos campos padrão para ficar de maneira mais apresentavel e com um design mais moderno
 - feito a estilização do botão de enviar para ficar com um design mais parecido com um modelo do google
+progresso 2 VUE + JS
+- criado a estrutura do projeto com Vue.js
+- criado Gitgnore para ignorar arquivos desnecessários
+- 
