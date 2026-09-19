@@ -1,9 +1,54 @@
-Progresso 1 HTML + CSS
-- criado os 3 campos de input (nome, email e senha)
-- criado o botão de enviar
-- feito a estilização dos campos padrão para ficar de maneira mais apresentavel e com um design mais moderno
-- feito a estilização do botão de enviar para ficar com um design mais parecido com um modelo do google
-progresso 2 VUE + JS
-- criado a estrutura do projeto com Vue.js
-- criado Gitgnore para ignorar arquivos desnecessários
-- 
+Documentação do Projeto
+Este repositório registra a evolução do desenvolvimento da aplicação, demonstrando a transição do HTML e CSS básicos para a reatividade com Vue.js e a tipagem estática com TypeScript.
+
+1. Progresso 1: HTML e CSS
+  Formulário: Criação dos três campos de entrada (nome, email e senha).
+
+  Ações: Implementação do botão de envio.
+
+  Estilização e UI/UX:
+
+  Estilização dos campos padrão para um visual mais apresentável e moderno.
+
+  Estilização do botão de envio seguindo o padrão visual do Google.
+
+2. Progresso 2: Vue.js e JavaScript
+  Estrutura: Criação da estrutura base do projeto utilizando Vue.js.
+
+  Funcionalidades: Implementação de filtro para tarefas com base no status (concluídas ou não concluídas).
+
+  Organização do Repositório: Configuração do .gitignore para ignorar arquivos desnecessários.
+
+  2.1. Como foram organizados os componentes
+    O projeto foi separado em 3 partes, cada uma com uma responsabilidade específica:
+
+    App.vue: Componente raiz, responsável apenas por posicionar a lista na página.
+
+    TodoList.vue: Interface do usuário (contém o formulário, filtro e a exibição das tarefas).
+
+    useTodos.js: Camada de lógica. Armazena o estado das tarefas e centraliza as ações de adicionar, concluir, apagar e filtrar.
+
+  2.2. Primitivas da Composition API
+    ref: Utilizado para a criação de variáveis reativas.
+
+    computed: Utilizado para calcular valores que dependem de outros dados reativos. Funciona como a única fonte da verdade, eliminando a necessidade de atualizações manuais do estado.
+
+3. Progresso 3: TypeScript
+  Estrutura: Configuração da estrutura do projeto com suporte a TypeScript.
+
+  Tipagem de Dados: Declaração das propriedades da interface User.
+
+  Lógica: Implementação da função getNamesOlderThan23, que recebe um array de usuários e retorna um array com os nomes daqueles que possuem idade superior a 23 anos.
+
+  Gerenciamento e Compilação:
+
+  Criação do arquivo package.json para gerenciar as dependências do projeto.
+
+  Criação do arquivo tsconfig.json para configurar as regras do compilador TypeScript.
+
+  3.1. Como foram declarados os tipos
+    Interface User: Define o formato do usuário com os campos id, age (number) e name (string). O TypeScript foi configurado para alertar sobre o uso de campos inexistentes ou valores com tipos incorretos (ex: age = 'vinte' ou tentativa de acesso a user.nome).
+
+    Função Reutilizável (Bônus): Em vez de criar uma função individual para cada filtro, foi desenvolvida uma única função genérica que atende a qualquer lista de objetos e qualquer campo numérico.
+
+    Tipo Comparison: Define a lista de operadores aceitos. Essa abordagem previne erros de digitação e ativa a sugestão automática de opções no editor de código.

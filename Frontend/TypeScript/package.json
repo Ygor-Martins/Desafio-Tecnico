@@ -1,0 +1,13 @@
+{
+  "name": "typescript-exercicios",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "start": "node src/users.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "^5.0.0"
+  }
+}
