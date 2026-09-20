@@ -52,3 +52,14 @@ Este repositório registra a evolução do desenvolvimento da aplicação, demon
     Função Reutilizável (Bônus): Em vez de criar uma função individual para cada filtro, foi desenvolvida uma única função genérica que atende a qualquer lista de objetos e qualquer campo numérico.
 
     Tipo Comparison: Define a lista de operadores aceitos. Essa abordagem previne erros de digitação e ativa a sugestão automática de opções no editor de código.
+
+4. Progresso 4: banco de dados
+  Estrutura: criação da estrutura do banco de dados e arquivos de queries
+
+  criação do arquivo SCHEMA.sql para criação estruturação da tabela.
+
+  criação do arquivo queries.sql para a queries de busca solicitadas na atividade.
+
+  4.1 explicação das queries
+  squema.sql: CREATE DATABASE query inicial para criação da database caso não existir, 'CREATE INTO e INSERT' utilizadas para a estruturação da tabela e inserção dos dados disponibilizados na atividade.
+  queries.sql: primeiro SELECT é usado para trazer todos os usuarios e emails ordenados pela data que foram criados, o segundo SELECT faz a contagem de quantos usuarios foram criados cada mês e trás o resultado ordenado pelo mês.
