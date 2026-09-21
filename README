@@ -63,3 +63,17 @@ Este repositório registra a evolução do desenvolvimento da aplicação, demon
   4.1 explicação das queries
   squema.sql: CREATE DATABASE query inicial para criação da database caso não existir, 'CREATE INTO e INSERT' utilizadas para a estruturação da tabela e inserção dos dados disponibilizados na atividade.
   queries.sql: primeiro SELECT é usado para trazer todos os usuarios e emails ordenados pela data que foram criados, o segundo SELECT faz a contagem de quantos usuarios foram criados cada mês e trás o resultado ordenado pelo mês.
+
+5. Progresso 5: Backend API em NestJS
+  estrutura: instalação da NestJS para a criação de uma API para listar e cadastrar usuarios em memoria
+
+  configurado o users.module.ts - organiza tudo relacionado aos usuarios e registra o usersController e usersService.
+  configurado o usersController - responsavél pelas rotas HTTP da API
+  configurado o Service.ts - responsavel pela logica dos usuarios
+  configurado o main.ts - Validation.Pipe para verificação dos dados recebidos para que sejam validados pelas regras definidas no DTO
+  utilizado class-validator para validar campos obrigatórios, como nome e formato do email
+  testados os endpoints, verificando também o retorno de "Bad request" para dados incorretos.
+
+  fluxo: Requisição -> controller -> DTO/validação -> Service -> resposta JSON
+
+
