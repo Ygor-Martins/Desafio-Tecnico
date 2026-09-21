@@ -76,4 +76,6 @@ Este repositório registra a evolução do desenvolvimento da aplicação, demon
 
   fluxo: Requisição -> controller -> DTO/validação -> Service -> resposta JSON
 
-
+6. Lógica por trás do GIT
+  a lógica por trás dos commits feitas no GIT foram para parecer de maneira mais simples para quem quisesse acompanhar o desenvolver do projeto, foi feito um commit para cada etapa na ordem das atividades do projeto. assim como no readme a descrição era um resumo do que foi acrescentado dentro de cada commit e o que foi feito de alteração em arquivos que ja existião no projeto.
+  
